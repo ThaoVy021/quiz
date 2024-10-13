@@ -6,7 +6,7 @@ import { postCreateNewUser } from "../../../services/apiServices";
 import { isValidEmail } from "../../../utils/validate";
 import { toast } from "react-toastify";
 
-export default function ModalCreateUser(props) {
+export default function ModalUpdateUser(props) {
   const { show, setShow } = props;
 
   const handleClose = () => {
@@ -72,7 +72,7 @@ export default function ModalCreateUser(props) {
         className="modal-add-user"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Add new user</Modal.Title>
+          <Modal.Title>Update a user</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form className="row g-3">
